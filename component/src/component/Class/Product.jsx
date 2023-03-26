@@ -29,10 +29,7 @@ class Product extends React.Component {
     return (
       <div className="box-stocks">
         <h2>{this.props.name}</h2>
-        <img
-          src="https://a.ipricegroup.com/media/Maria/handphone_oppo.jpg"
-          alt="oppo"
-        />
+        <img src={this.props.img} alt="oppo" />
         <p>
           <strong>Rp.{this.props.price}</strong>
         </p>
