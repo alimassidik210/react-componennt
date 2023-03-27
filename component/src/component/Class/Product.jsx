@@ -19,8 +19,9 @@ class Product extends React.Component {
     });
     if (this.state.stock === 1) {
       this.setState({
-        status: "Sold Out All",
+        status: "Not Available",
         disabled: true,
+        sub: "Sold Out",
       });
     }
   };
@@ -39,7 +40,7 @@ class Product extends React.Component {
           onClick={this.btnBuy}
           disabled={this.state.disabled}
         >
-          Buy
+          {this.state.sub}
         </button>
         <p>{this.state.status}</p>
       </div>

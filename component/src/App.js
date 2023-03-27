@@ -1,13 +1,10 @@
 import React from "react";
-import Beranda from "./component/Class/Beranda";
-import Home from "./component/Functional/Home";
-import "./App.css";
+import Boostrap from "./component/Boostrap";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Beranda />
+      <Boostrap />
     </div>
   );
 }
